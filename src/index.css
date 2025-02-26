@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'playfair';
+    src: url('/public/fonts/PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'baskervvile';
+    src: url('/public/fonts/PlayfairDisplay-SemiBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #f4ede6;
+   color: #382f26;
+  
+}
+.dark{
+    background-color: #2a2d32;
+   color: #080808;
+}
+p{
+    font-family: 'baskervvile';
+}
+h1{
+    font-family: 'playfair' serif;
+}

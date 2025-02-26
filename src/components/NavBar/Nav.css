@@ -1,0 +1,123 @@
+
+.menu{
+    position: fixed;
+   bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fbf8e9;
+    z-index: 999;
+    display: flex;
+    overflow: hidden;
+}
+.menu-outside{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+width: 100%;
+z-index: 2;
+
+padding: 0 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 2.4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.outside-link{
+  overflow: hidden;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+ width: 100%;
+}
+
+.menu-link-items{
+    display: flex;
+    width: 100%;
+   
+    position: relative;
+   
+
+}
+.menu-items{
+    display:inline-flex;
+    align-items: center;
+    font-size: 900%;
+    border-left: 2px solid black;
+    text-transform: uppercase;
+    padding: 4.5rem;
+    text-decoration: none;
+    cursor: pointer;
+writing-mode: vertical-rl;
+justify-content: center;
+overflow: hidden;
+}
+.menu-items a{
+
+   display: block;
+    transform: rotate(-180deg) ;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+   
+
+
+}
+.menu-close{
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: auto;
+    position: absolute;
+  z-index: 999;
+    top: 0;
+    right: 0;
+    padding: 2.5rem;
+    font-size: 2rem;
+}
+.connect{
+    width: 80px;
+    height: 80px;
+    font-weight: bolder;
+}
+.menu-open{
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+@media (max-width: 768px) {
+
+    .menu{
+     width: 100vw;
+     height: 100%;
+     flex-direction: column;
+    }
+    .menu-link-items{
+    width: 100vw;
+        flex-direction:column;
+    }
+    .menu-items {
+        border-left: unset;
+        border-bottom: 1px solid black;
+        writing-mode: unset;
+        padding: 3rem;
+        margin-top: 2rem;
+        
+    }
+    .menu-items a{
+        font-size: 3.6rem;
+        transform: unset;
+
+    }
+    .menu-close{
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    .menu-open{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+     padding: 0;
+    box-sizing: border-box;
+
+    
+    }
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main{
+  position: relative;
+  margin-top: 2em;
+  width: 100vw;
+  height:auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rows{
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+ overflow: visible;
+ 
+}
+.card{
+  width: 40%;
+  height: 400px;
+  overflow: hidden;
+  margin: 1em auto;
+  border-radius:20px ;
+ 
+}
+.card img{
+  
+}
+.main-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-family: 'Playfair Display';
+  text-align: center;
+}
+.copy{
+  margin: 1em auto;
+  transform: translateY(-90px);
+  opacity: 0;
+
+}
+.line{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.btn{
+  z-index: -2;
+  cursor: pointer;
+
+}
+button{
+  font-family: inherit;
+  transform: translateY(-90px);
+  opacity: 0;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 0.5em;
+  cursor: pointer;
+border-radius: 25px;
+background-color: #f4ede6;
+
+ 
+}
+
+
+
+
+  @media (max-width: 778px) {
+    .rows{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 500px;
+      overflow: visible;
+    }
+    .card{
+      width: 90%;
+      height: 500px;
+    }
+
+  
+
+    .copy{
+      font-size: 1.5rem;
+    }
+    .line{
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+  }
+
